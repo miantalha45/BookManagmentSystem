@@ -1,0 +1,166 @@
+[
+  {
+    "ContainingType": "BookManagmentSystem.Controllers.AccountController",
+    "Method": "SignIn",
+    "RelativePath": "api/Account/Sign-In",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "HisaberAccountServer.Models.LoginSystem.SignIn",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookManagmentSystem.Controllers.AccountController",
+    "Method": "SignUp",
+    "RelativePath": "api/Account/Sign-Up",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "inParams",
+        "Type": "HisaberAccountServer.Models.LoginSystem.SignUp",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookManagmentSystem.Controllers.BookController",
+    "Method": "AddBook",
+    "RelativePath": "api/Book/AddBook",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "book",
+        "Type": "BookManagmentSystem.Models.Books",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookManagmentSystem.Controllers.BookController",
+    "Method": "AddBooks",
+    "RelativePath": "api/Book/AddBooksInBulk",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "books",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[BookManagmentSystem.Models.Books, BookManagmentSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[BookManagmentSystem.Models.Books, BookManagmentSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BookManagmentSystem.Controllers.BookController",
+    "Method": "DeleteBook",
+    "RelativePath": "api/Book/DeleteBook/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookManagmentSystem.Controllers.BookController",
+    "Method": "DeleteBooksInBulk",
+    "RelativePath": "api/Book/DeleteBooksInBulk",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bookIds",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookManagmentSystem.Controllers.BookController",
+    "Method": "GetBookDetails",
+    "RelativePath": "api/Book/GetBookDetails/{ID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookManagmentSystem.Controllers.BookController",
+    "Method": "GetBooksByPopularity",
+    "RelativePath": "api/Book/GetBooksByPopularity",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookManagmentSystem.Controllers.BookController",
+    "Method": "UpdateBook",
+    "RelativePath": "api/Book/UpdateBook/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "book",
+        "Type": "BookManagmentSystem.Models.Books",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
