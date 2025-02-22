@@ -4,8 +4,7 @@
 The **Book Management System** is a web-based API built using **ASP.NET Core Web API**. It allows users to manage books by performing CRUD operations such as adding, updating, deleting, and viewing books.
 
 ## 🚀 Features
-- User authentication and authorization using **JWT**.
-- Secure API endpoints with **ASP.NET Identity**.
+- Secure API endpoints with **ASP.NET Identity.EFCore**.
 - Manage books with **Create, Read, Update, and Delete (CRUD)** functionality.
 - Database integration using **SQL Server**.
 - Unit of Work and Repository Pattern for efficient data management.
@@ -13,7 +12,6 @@ The **Book Management System** is a web-based API built using **ASP.NET Core Web
 ## 🛠️ Technologies Used
 - **Backend:** ASP.NET Core Web API (.NET 8)
 - **Database:** SQL Server
-- **Authentication:** ASP.NET Identity & JWT
 
 ## 🔧 Installation & Setup
 ### 1️⃣ Clone the Repository
